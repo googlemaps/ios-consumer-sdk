@@ -1,6 +1,6 @@
 // swift-tools-version: 5.5
 /*
- * Copyright 2024 Google LLC
+ * Copyright 2022 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,21 +21,43 @@ let package = Package(
   name: "GoogleRidesharingConsumer", platforms: [.iOS(.v14)],
   products: [
     .library(name: "GoogleRidesharingConsumer", targets: ["GoogleRidesharingConsumerTarget"])
-  ], dependencies: [],
+  ], dependencies: [.package(url: "https://github.com/googlemaps/ios-maps-sdk", from: "8.4.0")],
   targets: [
     .binaryTarget(
       name: "GoogleRidesharingConsumer",
       url:
-        "https://dl.google.com/geosdk/swiftpm/0.0.0/GoogleRidesharingConsumer_3p.xcframework.zip",
-      checksum: "62ff7770c89511a66e0def866e27c71db2e2c5acb26a6724fba7aab9159ed91c"
+        "https://dl.google.com/geosdk/swiftpm/3.3.0/GoogleRidesharingConsumer_3p.xcframework.zip",
+      checksum: "fca2a6be920194f9a28338e0e22a85e790d0fd30b7f9ce4986fe405ee6616c1e"
     ),
     .target(
       name: "GoogleRidesharingConsumerTarget",
-      dependencies: ["GoogleRidesharingConsumer"],
+      dependencies: [
+        "GoogleRidesharingConsumer",
+        .product(name: "GoogleMaps", package: "ios-maps-sdk"),
+        .product(name: "GoogleMapsCore", package: "ios-maps-sdk"),
+        .product(name: "GoogleMapsBase", package: "ios-maps-sdk"),
+      ],
       path: "Consumer",
       sources: ["GMTCEmpty.m"],
       resources: [.copy("Resources/GoogleRidesharingConsumer/GoogleRidesharingConsumer.bundle")],
-      publicHeadersPath: "Sources"
+      publicHeadersPath: "Sources",
+      linkerSettings: [
+        .linkedLibrary("c++"),
+        .linkedLibrary("z"),
+        .linkedFramework("Accelerate"),
+        .linkedFramework("CoreData"),
+        .linkedFramework("CoreGraphics"),
+        .linkedFramework("CoreImage"),
+        .linkedFramework("CoreLocation"),
+        .linkedFramework("CoreTelephony"),
+        .linkedFramework("CoreText"),
+        .linkedFramework("GLKit"),
+        .linkedFramework("ImageIO"),
+        .linkedFramework("OpenGLES"),
+        .linkedFramework("QuartzCore"),
+        .linkedFramework("SystemConfiguration"),
+        .linkedFramework("UIKit"),
+      ]
     ),
   ]
 )

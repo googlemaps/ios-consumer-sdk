@@ -36,7 +36,7 @@ CocoaPods, see the Consumer SDK for iOS
     and using the "Exact Version" option.
 
 4.  Follow the
-    [instructions](https://developers.google.com/maps/documentation/navigation/ios-sdk/config#add-an-api-key-to-your-project)
+    [instructions](https://developers.google.com/maps/documentation/transportation-logistics/on-demand-rides-deliveries-solution/trip-order-progress/consumer-sdk/consumer_sdk_quickstart_ios#application_integration)
     to add your API key to your app.
 
 ## Sample App
@@ -75,10 +75,10 @@ Maps Platform Terms of Service).
 This repositiory adheres to [semantic versioning](https://semver.org/) to
 indicate when backwards-incompatible changes are introduced.
 
--   For issues with the Navigation SDK for iOS, please
-    [open a support case](https://developers.google.com/maps/documentation/navigation/ios-sdk/support).
+-   For issues with the Consumer SDK for iOS, please
+    [open a support case](https://developers.google.com/maps/documentation/transportation-logistics/on-demand-rides-deliveries-solution/support/support#contact-maps-support).
 -   If you find a bug with the Swift package, please
-    [file an issue](https://github.com/googlemaps/ios-navigation-sdk/issues) on
+    [file an issue](https://github.com/googlemaps/ios-consumer-sdk/issues) on
     GitHub.
 
 If you would like to get answers to technical questions from other Google Maps
