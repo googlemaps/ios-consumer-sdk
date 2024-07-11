@@ -10,8 +10,8 @@ CocoaPods, see the Consumer SDK for iOS
 
 ## Requirements
 
--   [Xcode](https://developer.apple.com/xcode/) version 14.0 or later
--   An app targeting iOS 14 or later
+-   [Xcode](https://developer.apple.com/xcode/) version 15.0 or later
+-   An app targeting iOS 15 or later
 -   A Google Maps Platform
     [project](https://developers.google.com/maps/documentation/ios-sdk/cloud-setup)
     with the Maps SDK for iOS enabled.
