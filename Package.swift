@@ -26,7 +26,7 @@ let package = Package(
       name: "GoogleRidesharingConsumer",
       url:
         "https://dl.google.com/geosdk/swiftpm/9.2.0/GoogleRidesharingConsumer_3p.xcframework.zip",
-      checksum: "e51d555b99605dbda6b8932bbe185d164cddfc5877a326dd27b70b78b3943c24"
+      checksum: "4dfcc5d924b37d08d73da6b0fff5d1071d7548561d5d4cd10932982749d0fe55"
     ),
     .target(
       name: "GoogleRidesharingConsumerTarget",
