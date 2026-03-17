@@ -20,13 +20,13 @@ let package = Package(
   name: "GoogleRidesharingConsumer", platforms: [.iOS(.v16)],
   products: [
     .library(name: "GoogleRidesharingConsumer", targets: ["GoogleRidesharingConsumerTarget"])
-  ], dependencies: [.package(url: "https://github.com/googlemaps/ios-maps-sdk", from: "10.0.0")],
+  ], dependencies: [.package(url: "https://github.com/googlemaps/ios-maps-sdk", from: "10.10.0")],
   targets: [
     .binaryTarget(
       name: "GoogleRidesharingConsumer",
       url:
-        "https://dl.google.com/geosdk/swiftpm/10.0.0/GoogleRidesharingConsumer_3p.xcframework.zip",
-      checksum: "e8dd3e8d578078c1044f770bb5fac16752773a251645204c322bccf9c185b3cf"
+        "https://dl.google.com/geosdk/swiftpm/10.10.0/GoogleRidesharingConsumer_3p.xcframework.zip",
+      checksum: "ec4c9cebc4cdf0b8af9b1957f8d5b30018a3d061db47047d7c673e378e0c62b4"
     ),
     .target(
       name: "GoogleRidesharingConsumerTarget",
