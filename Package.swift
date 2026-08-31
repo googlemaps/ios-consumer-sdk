@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.5
 //
 // Copyright 2024 Google LLC
 //
@@ -6,7 +6,7 @@
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
 //
-//      http://www.apache.org/licenses/LICENSE-2.0
+//      https://www.apache.org/licenses/LICENSE-2.0
 //
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
@@ -17,16 +17,16 @@
 import PackageDescription
 
 let package = Package(
-  name: "GoogleRidesharingConsumer", platforms: [.iOS(.v16)],
+  name: "GoogleRidesharingConsumer", platforms: [.iOS(.v15)],
   products: [
     .library(name: "GoogleRidesharingConsumer", targets: ["GoogleRidesharingConsumerTarget"])
-  ], dependencies: [.package(url: "https://github.com/googlemaps/ios-maps-sdk", from: "10.10.0")],
+  ], dependencies: [.package(url: "https://github.com/googlemaps/ios-maps-sdk", from: "9.0.0")],
   targets: [
     .binaryTarget(
       name: "GoogleRidesharingConsumer",
       url:
-        "https://dl.google.com/geosdk/swiftpm/10.10.1/GoogleRidesharingConsumer_3p.xcframework.zip",
-      checksum: "cc4d1aba71717c7d706532ed5dd9a1a9f3a5de7fc9761617700f687ddaaa87e8"
+        "https://dl.google.com/geosdk/swiftpm/9.0.0/GoogleRidesharingConsumer_3p.xcframework.zip",
+      checksum: "5e9ff7d30325ded928a3e9f64266b93021b2206586b5a53477e83c66cbfdf4a1"
     ),
     .target(
       name: "GoogleRidesharingConsumerTarget",

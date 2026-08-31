@@ -4,14 +4,14 @@
 
 This repository contains the Swift package for the
 [Consumer SDK for iOS](https://developers.google.com/maps/documentation/transportation-logistics/on-demand-rides-deliveries-solution/trip-order-progress/consumer-sdk/consumer_sdk_quickstart_ios).
-For additional methods of installing the Consumer SDK for iOS including
-CocoaPods, see the Consumer SDK for iOS
+For additional methods of installing the Consumer SDK for iOS,
+see the Consumer SDK for iOS
 [documentation](https://developers.google.com/maps/documentation/transportation-logistics/on-demand-rides-deliveries-solution/trip-order-progress/consumer-sdk/consumer_sdk_quickstart_ios).
 
 ## Requirements
 
--   [Xcode](https://developer.apple.com/xcode/) version 16.0 or later.
--   An app targeting iOS 16 or later.
+-   [Xcode](https://developer.apple.com/xcode/) version 15.0 or later.
+-   An app targeting iOS 15 or later.
 -   A Google Maps Platform
     [project](https://developers.google.com/maps/documentation/ios-sdk/cloud-setup)
     with the Maps SDK for iOS enabled.
