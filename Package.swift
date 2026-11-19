@@ -20,7 +20,7 @@ let package = Package(
   name: "GoogleRidesharingConsumer", platforms: [.iOS(.v16)],
   products: [
     .library(name: "GoogleRidesharingConsumer", targets: ["GoogleRidesharingConsumerTarget"])
-  ], dependencies: [.package(url: "https://github.com/googlemaps/ios-maps-sdk", from: "10.10.0")],
+  ], dependencies: [.package(url: "https://github.com/googlemaps/ios-maps-sdk", .upToNextMinor(from: "11.1.1"))],
   targets: [
     .binaryTarget(
       name: "GoogleRidesharingConsumer",
